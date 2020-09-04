@@ -1,0 +1,115 @@
+def getdate():
+    import datetime
+    return datetime.datetime.now()
+getdate = str(getdate())
+
+log_retrieve = int(input("1 for log and 2 to retrieve \n"))
+names = int(input("1 for soham, 2 for himu, 3 for renu \n"))
+if log_retrieve == 1:
+    if names == 1:
+        ex_di = int(input("You are in log mode, what do you want to log \n1 for excercise 2 for diet\n"))
+        if ex_di == 1:
+            f1 = open("sohamexcercise.txt", "a")
+            p1 = input("Type what do you want to enter\n")
+            a1 = f1.write(str([getdate]))
+            b1 = f1.write("   ")
+            c1 = f1.write(p1)
+            d1 = f1.write("\n")
+            print("Task completed succesfully")
+            f1.close()
+        elif ex_di == 2:
+            f2 = open("sohamdiet.txt", "a")
+            p2 = input("Type what do you want to enter\n")
+            a2 = f2.write(str([getdate]))
+            b2 = f2.write("   ")
+            c2 = f2.write(p2)
+            d2 = f2.write("\n")
+            print("Task completed succesfully")
+            f2.close()
+
+
+    elif names == 2:
+        ex_di = int(input("You are in log mode, what do you want to log \n1 for excercise 2 for diet\n"))
+        if ex_di == 1:
+            f1 = open("himuexcercise.txt", "a")
+            p1 = input("Type what do you want to enter\n")
+            a1 = f1.write(str([getdate]))
+            b1 = f1.write("   ")
+            c1 = f1.write(p1)
+            d1 = f1.write("\n")
+            print("Task completed succesfully")
+            f1.close()
+        elif ex_di == 2:
+            f2 = open("himudiet.txt", "a")
+            p2 = input("Type what do you want to enter\n")
+            a2 = f2.write(str([getdate]))
+            b2 = f2.write("   ")
+            c2 = f2.write(p2)
+            d2 = f2.write("\n")
+            print("Task completed succesfully")
+            f2.close()
+
+    elif names == 3:
+        ex_di = int(input("You are in log mode, what do you want to log \n1 for excercise 2 for diet\n"))
+        if ex_di == 1:
+            f1 = open("renuexcercise.txt", "a")
+            p1 = input("Type what do you want to enter\n")
+            a1 = f1.write(str([getdate]))
+            b1 = f1.write("   ")
+            c1 = f1.write(p1)
+            d1 = f1.write("\n")
+            print("Task completed succesfully")
+            f1.close()
+        elif ex_di == 2:
+            f2 = open("renudiet.txt", "a")
+            p2 = input("Type what do you want to enter\n")
+            a2 = f2.write(str([getdate]))
+            b2 = f2.write("   ")
+            c2 = f2.write(p2)
+            d2 = f2.write("\n")
+            print("Task completed succesfully")
+            f2.close()
+
+
+if log_retrieve == 2:
+    if names == 1:
+        ex_di = int(input("You are in retrieve mode, what do you want to check \n1 for excercise and 2 for diet\n"))
+        if ex_di == 1:
+            f1 = open("sohamexcercise.txt", "r")
+            r1 = f1.read()
+            print(r1)
+            f1.close()
+        if ex_di == 2:
+            f2 = open("sohamdiet.txt", "r")
+            r2 = f2.read()
+            print(r2)
+            f2.close()
+
+
+    elif names == 2:
+        ex_di = int(input("You are in retrieve mode, what do you want to check \n1 for excercise and 2 for diet\n"))
+        if ex_di == 1:
+            f1 = open("himuexcercise.txt", "r")
+            r1 = f1.read()
+            print(r1)
+            f1.close()
+        elif ex_di == 2:
+            f2 = open("himudiet.txt", "r")
+            r2 = f2.read()
+            print(r2)
+            f2.close()
+
+
+
+    elif names == 3:
+        ex_di = int(input("You are in retrieve mode, what do you want to check \n1 for excercise and 2 for diet\n"))
+        if ex_di == 1:
+            f1 = open("renuexcercise.txt", "r")
+            r1 = f1.read()
+            print(r1)
+            f1.close()
+        elif ex_di == 2:
+            f2 = open("renudiet.txt", "r")
+            r2 = f2.read()
+            print(r2)
+            f2.close()
